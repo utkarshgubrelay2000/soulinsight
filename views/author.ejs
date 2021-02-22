@@ -1,0 +1,16 @@
+<head>
+    <meta charset="utf-8">
+    <title>CKEditor 5 - Inline editor</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/24.0.0/inline/ckeditor.js"></script>
+</head>
+<body>
+  <div><%- content %></div>
+    <script>
+        InlineEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+</body>
+</html>
